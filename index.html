@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="player-details">
+        <h2>Player Setup</h2>
+        <div class="player-input">
+            <label for="firstName">First Player Name:</label>
+            <input type="text" id="firstName" placeholder="First Player Name">
+        </div>
+        <div class="player-input">
+            <label for="secondName">Second Player Name:</label>
+            <input type="text" id="secondName" placeholder="Second Player Name">
+        </div>
+        <button id="start-game">Start Game</button>
+    </div>
+
+    <div id="category" style="display: none;">
+        <h2>Category Selection</h2>
+        <select id="list">
+            <option value="general_knowledge">General Knowledge</option>
+            <option value="sport_and_leisure">Sports and Leisure</option>
+            <option value="film_and_tv">Film and TV</option>
+            <option value="geography">Geography</option>
+            <option value="music">Music</option>
+            <option value="society_and_culture">Society and Culture</option>
+            <option value="arts_and_literature">Arts and Literature</option>
+        </select>
+        <button id="select-category-btn">Select Category</button>
+    </div>
+
+    <div id="questions" style="display: none;">
+        <h2>Questions</h2>
+        <p id="textQuestions"></p>
+        <ul id="answers"></ul>
+        <button id="submitAnswer">Submit Answer</button>
+        <div id="scores">
+            <p>Player 1 Score: <span id="player1-score">0</span></p>
+            <p>Player 2 Score: <span id="player2-score">0</span></p>
+        </div>
+    </div>
+
+    <div id="results" style="display: none;">
+        <h2>Results</h2>
+        <p id="resultText"></p>
+        <button id="play-again">Play Again</button>
+        <button id="end-game">End Game</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
